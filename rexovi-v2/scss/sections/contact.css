@@ -1,0 +1,31 @@
+.contact{
+    text-align: center;
+}
+.contact__form{
+    display:grid;gap:24px;
+    padding: 50px;
+    max-width: 73ch;
+    margin: 0 auto;
+}
+.contact__form button{
+    padding:24px 14px;
+    border:1px solid rgba(255,255,255,.12);
+    background:rgba(255,255,255,.04);
+    border-radius:999px;
+    color:#fff;
+    cursor:pointer;
+    transition:.3s;
+    margin: 0 auto;
+    width: 150px;
+
+}
+.contact input,.contact textarea{
+    background:#0f1d37;
+    border:none;
+    border-bottom:1px solid rgba(255,255,255,.15);
+    padding:16px 15px;
+    color:#fff
+}
+.contact h2{
+    font-size: var(--title-level-2);
+}
