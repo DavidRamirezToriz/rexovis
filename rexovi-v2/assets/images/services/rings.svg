@@ -1,0 +1,14 @@
+<svg class="card__icon card__icon--rings js-rings" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 200" aria-hidden="true">
+  <g class="rings-left">
+    <circle class="ilove-ring" cx="100" cy="100" r="25"/>
+    <circle class="ilove-ring" cx="100" cy="100" r="55"/>
+    <circle class="ilove-ring" cx="100" cy="100" r="70"/>
+    <circle class="ilove-ring" cx="100" cy="100" r="85"/>
+  </g>
+  <g class="rings-right">
+    <circle class="ilove-ring" cx="240" cy="100" r="25"/>
+    <circle class="ilove-ring" cx="240" cy="100" r="55"/>
+    <circle class="ilove-ring" cx="240" cy="100" r="70"/>
+    <circle class="ilove-ring" cx="240" cy="100" r="85"/>
+  </g>
+</svg>

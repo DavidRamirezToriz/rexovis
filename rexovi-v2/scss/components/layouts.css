@@ -1,0 +1,5 @@
+
+.layout-split{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;}
+.layout-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;}
+.layout-centered{text-align:center;}
+@media(max-width:991px){.layout-split,.layout-cards{grid-template-columns:1fr;}}

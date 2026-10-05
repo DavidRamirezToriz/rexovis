@@ -1,0 +1,9 @@
+
+<svg class="card__icon card__icon--frequency js-frequency" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 340 200">
+  <line class="ilove-frequency" x1="20.5" y1="100" x2="322" y2="100"/>
+  <path class="ilove-frequency_fill" d="M99.6,99.9s17.6-58.8,40.2-59.1,35.9,59.1,35.9,59.1h-76.1Z"/>
+  <path class="ilove-frequency_fill" d="M315.7,100.1s-17.6,58.8-40.2,59.1-35.9-59.1-35.9-59.1h76.1Z"/>
+  <path class="ilove-frequency_fill" d="M99.6,100.1s-16.2,58.8-37,59.1-33-59.1-33-59.1h70.1Z"/>
+  <path class="ilove-frequency_fill" d="M175.6,99.9s6.9,22.7,17.9,22.7,15.2-22.5,15.2-22.5h-33.1Z"/>
+  <path class="ilove-frequency_fill" d="M241.9,99.9s-6.9-22.7-17.9-22.7-15.2,22.5-15.2,22.5h33.1Z"/>
+</svg>

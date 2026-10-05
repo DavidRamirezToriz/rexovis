@@ -1,0 +1,18 @@
+.projects{position:relative;overflow:hidden;min-height:1000px;padding:50px 0 50px;}
+.projects-track{display:flex;gap:32px;padding-left:40px;will-change:transform;touch-action:pan-y;}
+.project{flex:0 0 520px;width:520px;}
+.feature-card__inner{width:520px;height:440px;padding:32px;border:1px solid var(--c-secondary);border-radius:28px;background:var(--c-primary);display:flex;flex-direction:column;box-sizing:border-box;}
+.feature-card__icon{height:220px;display:flex;align-items:center;justify-content:flex-start;}
+.carousel-lottie{width:220px;height:220px;display:flex;align-items:center;justify-content:center;}
+.carousel-lottie svg,.carousel-lottie canvas{width:100%!important;height:100%!important;max-width:none!important;display:block;}
+.feature-card__divider{height:1px;background:var(--c-secondary);margin:24px 0;}
+.feature-card__footer{margin-top:auto;display:grid;grid-template-columns:90px 1fr;gap:16px;align-items:end;}
+.feature-card__number{font-size:4.5rem;line-height:.9;color:#fff;font-weight: 600; }
+.feature-card__text{margin:0;font-size:1.15rem;line-height:1.4;}
+.projects-nav{position:absolute;right:40px;bottom:120px;display:flex;gap:12px;z-index:500;}
+.projects-prev,.projects-next{width:56px;height:56px;border-radius:50%;border:1px solid var(--c-secondary);background:rgba(21,38,71,.95);color:var(--c-secondary);cursor:pointer;}
+.projects-progress{position:absolute;left:40px;bottom:145px;width:220px;height:2px;background:rgba(255,255,255,.15);z-index:500;}
+.projects-progress span{display:block;height:100%;width:0;background:var(--c-secondary);transition:width .4s ease;}
+@media (max-width:1200px){.project{flex:0 0 440px;width:440px}.feature-card__inner{width:440px;height:400px}.carousel-lottie{width:180px;height:180px}}
+@media (max-width:768px){.projects{min-height:auto;padding:80px 0 160px}.projects-track{gap:20px;padding-left:20px}.project{flex:0 0 320px;width:320px}.feature-card__inner{width:320px;height:360px;padding:24px}.carousel-lottie{width:140px;height:140px}.feature-card__number{font-size:3rem}.feature-card__text{font-size:1rem}.projects-nav{right:20px;bottom:80px}.projects-progress{left:20px;width:140px;bottom:105px}}
+@media (max-width:480px){.project{flex:0 0 280px;width:280px}.feature-card__inner{width:280px;height:320px;padding:20px}.projects-track{gap:16px}.projects-progress{width:120px}}

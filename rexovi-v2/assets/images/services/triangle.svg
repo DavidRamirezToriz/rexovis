@@ -1,0 +1,9 @@
+<svg class="card__icon card__icon--triangle js-triangle" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 340 200">
+  <polygon class="ilove-triangle" points="255.9 32.9 178.2 167.4 333.6 167.4 255.9 32.9"/>
+  <polygon class="ilove-triangle" points="223.3 45.6 164 148.5 282.7 148.5 223.3 45.6"/>
+  <polygon class="ilove-triangle" points="199.4 55.1 153.2 135.3 245.7 135.3 199.4 55.1"/>
+  <polygon class="ilove-triangle" points="85.5 32.9 163.1 167.4 7.8 167.4 85.5 32.9"/>
+  <polygon class="ilove-triangle" points="118 45.6 177.4 148.5 58.6 148.5 118 45.6"/>
+  <polygon class="ilove-triangle" points="141.9 55.1 188.2 135.3 95.7 135.3 141.9 55.1"/>
+  <polygon class="ilove-triangle" points="172.9 62.6 136.7 125.3 209 125.3 172.9 62.6"/>
+</svg>
