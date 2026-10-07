@@ -288,7 +288,7 @@ intermediarios innecesarios</span>
 		<div class="hero-hex-v2__content">
 			<h1 class="title-level-1">Your Memories Shouldn't Belong to a Single Tech Giant.</h1>
 			<p class="title-paragraph">
-				Own your digital legacy. <strong>REXOVI®</strong> combines zero-knowledge, end-to-end encryption with decentralized storage to build an unbreakable vault for your photos and videos. Truly private. Highly affordable.
+				Own your digital legacy. <strong>REXOVIS®</strong> combines zero-knowledge, end-to-end encryption with decentralized storage to build an unbreakable vault for your photos and videos. Truly private. Highly affordable.
 			</p>
 			<!-- <p class="title-paragraph">
 				Nuestra plataforma integra pagos cross-border, stablecoins y tokenización de activos para ofrecer transacciones más rápidas, seguras y accesibles, sin fronteras ni intermediarios innecesarios
@@ -330,7 +330,7 @@ intermediarios innecesarios</span>
   <path class="ilove-spiral" d="M6.7,51.5S61.3,68,86.1,5.6"/>
 </svg>
 				</div>
-				<a class="btn-primary">Schedule an Engineering Briefing</a>
+				<a class="btn-primary" href="#briefing-modal" data-open-briefing>Schedule an Engineering Briefing</a>
 				<!-- <div class="metric">1,740.34</div>
 				<p class="flag-trans">transfiriendo</p> -->
 			</div>
@@ -339,7 +339,7 @@ intermediarios innecesarios</span>
 				<p>
 					Limited to <strong>500</strong> slots for Phase 1. No crypto knowledge required 
 				</p>
-				<a class="btn-primary">Join the Private Beta </a>
+				<a class="btn-primary" href="#briefing-modal" data-open-briefing>Join the Private Beta </a>
 				<!-- <ul class="benefits-list">
 					<li>
 						Préstamos
@@ -616,6 +616,25 @@ intermediarios innecesarios</span>
     <p>© 2026 REXOVI® Data Systems. A Subsidiary of LIVING ROCK DIGITAL, SAPI DE CV.</p>
   </div>
 </footer>
+<dialog class="briefing-modal" id="briefing-modal" aria-labelledby="briefing-modal-title">
+  <div class="briefing-modal__header">
+    <h2 id="briefing-modal-title">Contáctanos</h2>
+    <button class="briefing-modal__close" type="button" aria-label="Cerrar formulario" data-close-briefing>&times;</button>
+  </div>
+  <form class="briefing-form" id="briefing-form">
+    <label for="briefing-email">Email</label>
+    <input id="briefing-email" name="email" type="email" autocomplete="email" maxlength="254" required>
+
+    <label for="briefing-phone">Teléfono</label>
+    <input id="briefing-phone" name="phone" type="tel" autocomplete="tel" maxlength="40" required>
+
+    <label for="briefing-message">Texto</label>
+    <textarea id="briefing-message" name="message" rows="4" maxlength="2000" required></textarea>
+
+    <p class="briefing-form__status" id="briefing-form-status" aria-live="polite"></p>
+    <button class="btn-primary briefing-form__submit" type="submit">Enviar</button>
+  </form>
+</dialog>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script src="js/livingrock-core-network-v2.js"></script>
@@ -627,5 +646,6 @@ intermediarios innecesarios</span>
 <script src="js/animations.js"></script>
 <script src="js/showcase.js"></script>
 <script src="js/hero.js"></script>
+<script src="js/briefing-modal.js"></script>
 </body>
 </html>

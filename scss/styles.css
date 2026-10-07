@@ -672,6 +672,42 @@ h6{
  .lottie-block svg{max-width:500px;}
 }
 
+.briefing-modal{
+ width:min(480px,calc(100% - 32px));
+ max-height:calc(100% - 32px);
+ padding:28px;
+ box-sizing:border-box;
+ border:1px solid rgba(255,255,255,.16);
+ border-radius:16px;
+ background:#171b27;
+ color:#fff;
+ box-shadow:0 24px 80px rgba(0,0,0,.45);
+}
+.briefing-modal *{box-sizing:border-box;}
+.briefing-modal::backdrop{background:rgba(7,10,18,.76);backdrop-filter:blur(4px);}
+.briefing-modal__header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:22px;}
+.briefing-modal__header h2{font-family:var(--font-body);font-size:1.35rem;margin:0;}
+.briefing-modal__close{width:36px;height:36px;border:0;border-radius:50%;background:rgba(255,255,255,.1);color:#fff;font-size:1.5rem;line-height:1;cursor:pointer;}
+.briefing-form{display:grid;gap:10px;}
+.briefing-form label{font-size:.9rem;font-weight:600;}
+.briefing-form input,.briefing-form textarea{
+ width:100%;
+ padding:12px 14px;
+ border:1px solid rgba(255,255,255,.2);
+ border-radius:8px;
+ background:rgba(255,255,255,.06);
+ color:#fff;
+ font:inherit;
+}
+.briefing-form textarea{resize:vertical;min-height:110px;}
+.briefing-form input:focus,.briefing-form textarea:focus{outline:2px solid #E6F85D;outline-offset:1px;}
+.briefing-form__status{min-height:1.25em;font-size:.9rem;line-height:1.4;}
+.briefing-form__status[data-state="success"]{color:#E6F85D;}
+.briefing-form__status[data-state="error"]{color:#ff9c9c;}
+.briefing-form__submit{width:100%;border:0;font:inherit;font-weight:600;}
+.briefing-form__submit:disabled{cursor:wait;opacity:.65;}
+@media(max-width:480px){.briefing-modal{padding:22px;}}
+
 /* .section{padding-block:var(--section-padding);} */
 .layout-split{
 
