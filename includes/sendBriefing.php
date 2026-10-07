@@ -16,11 +16,12 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 $email = isset($_POST['email']) && is_string($_POST['email']) ? trim($_POST['email']) : '';
 $phone = isset($_POST['phone']) && is_string($_POST['phone']) ? trim($_POST['phone']) : '';
 $message = isset($_POST['message']) && is_string($_POST['message']) ? trim($_POST['message']) : '';
+$messageLength = preg_match_all('/./us', $message, $messageCharacters);
 
 if (
 	$email === '' || strlen($email) > 254 || !filter_var($email, FILTER_VALIDATE_EMAIL) ||
-	$phone === '' || strlen($phone) > 160 ||
-	$message === '' || strlen($message) > 8000
+	!preg_match('/^[0-9]{10}$/', $phone) ||
+	$message === '' || $messageLength === false || $messageLength > 200
 ) {
 	respond(400, false, 'Completa los campos con información válida e intenta de nuevo.');
 }

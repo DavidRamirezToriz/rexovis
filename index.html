@@ -619,17 +619,20 @@ intermediarios innecesarios</span>
 <dialog class="briefing-modal" id="briefing-modal" aria-labelledby="briefing-modal-title">
   <div class="briefing-modal__header">
     <h2 id="briefing-modal-title">Contáctanos</h2>
-    <button class="briefing-modal__close" type="button" aria-label="Cerrar formulario" data-close-briefing>&times;</button>
+    <button class="briefing-modal__close" type="button" aria-label="Cerrar formulario" data-close-briefing>
+      <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false"><path d="m6 6 12 12M18 6 6 18"/></svg>
+    </button>
   </div>
   <form class="briefing-form" id="briefing-form">
     <label for="briefing-email">Email</label>
-    <input id="briefing-email" name="email" type="email" autocomplete="email" maxlength="254" required>
+    <input id="briefing-email" name="email" type="email" autocomplete="email" maxlength="254" placeholder="correo@ejemplo.com" required>
 
     <label for="briefing-phone">Teléfono</label>
-    <input id="briefing-phone" name="phone" type="tel" autocomplete="tel" maxlength="40" required>
+    <input id="briefing-phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel-national" placeholder="22 2222 2222" required>
 
     <label for="briefing-message">Texto</label>
-    <textarea id="briefing-message" name="message" rows="4" maxlength="2000" required></textarea>
+    <textarea id="briefing-message" name="message" rows="4" maxlength="200" aria-describedby="briefing-message-count" required></textarea>
+    <div class="briefing-form__counter" id="briefing-message-count" aria-live="polite"><span id="briefing-message-length">0</span> / 200 caracteres</div>
 
     <p class="briefing-form__status" id="briefing-form-status" aria-live="polite"></p>
     <button class="btn-primary briefing-form__submit" type="submit">Enviar</button>
